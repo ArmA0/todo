@@ -1,18 +1,7 @@
-import { ActionCreator, createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { ISlice, todoItems } from "../../models";
 
-export interface ISlice {
-    todos: todoItems[],
-    loading: boolean,
-    error: boolean,
-    errorMessage: string
-}
 
-export interface todoItems{
-    userId: number,
-    id: number,
-    title: string,
-    completed: boolean
-}
 
 const initialState: ISlice = {
     todos: [],
