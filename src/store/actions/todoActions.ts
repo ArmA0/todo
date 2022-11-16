@@ -11,7 +11,7 @@ interface ITodos {
 export const getTodos = () => async (dispatch:Dispatch) => {
     try {
         dispatch(isLoading());
-        const data:ITodos = await instance.get('');
+        const data:ITodos = await instance.get<todoItems[]>('');
         
         dispatch(setTodosData(data.data));
         

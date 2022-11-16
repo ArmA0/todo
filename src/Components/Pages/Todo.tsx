@@ -1,16 +1,15 @@
 import { todoItems } from "../../models"
 
 interface todoProps {
-    todo: todoItems
+    todos: todoItems
 }
 
-const Todo = ({todo}: todoProps[]) => {
+const Todo = ({todos}: todoProps[]) => {
 
-    console.log(todo);
+    console.log(todos);
     
     return (
         <>
-            {todo}
         </>
     )
 }

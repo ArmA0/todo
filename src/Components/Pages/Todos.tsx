@@ -5,12 +5,14 @@ import Todo from "./Todo"
 const Todos = () => {
     const todosSelector = useAppSelector(state => state.todos)
     const todos = todosSelector.todos
-
+    
+    
     return (
         <div>
             {todosSelector.loading && "Loading..."}
             {todosSelector.error && todosSelector.errorMessage}
-            <Todo todo={todos} />
+            {todos.map(todo => <Todo todos={todo} /> )}
+            
         </div>
     )
 }

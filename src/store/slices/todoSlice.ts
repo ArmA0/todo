@@ -1,8 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { ISlice, todoItems } from "../../models";
 
-
-
 const initialState: ISlice = {
     todos: [],
     loading: false,
