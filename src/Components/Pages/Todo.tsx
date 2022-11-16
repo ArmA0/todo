@@ -4,7 +4,7 @@ interface todoProps {
     todos: todoItems
 }
 
-const Todo = ({todos}: todoProps[]) => {
+const Todo = ({todos}: todoProps) => {
 
     console.log(todos);
     
