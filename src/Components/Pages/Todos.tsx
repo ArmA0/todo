@@ -11,7 +11,7 @@ const Todos = () => {
         <div>
             {todosSelector.loading && "Loading..."}
             {todosSelector.error && todosSelector.errorMessage}
-            {todos.map(todo => <Todo todos={todo} /> )}
+            {todos.map(todo => <Todo todo={todo} key={todo.id} /> )}
             
         </div>
     )

@@ -1,0 +1,11 @@
+.wrap {
+    color: blue;
+}
+.completed > img {
+    width: 20px;
+    height: 20px;
+}
+
+.taskCompleted {
+    text-decoration: line-through;
+}
